@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="./style/style.css" rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="row">
+        <input type="file" multiple id="selected_files" />
+        <input type="submit" id="btn" class="btn"/>
+      </form>
+      <div class="img" id="img">
+         <img id="dispaly_img" src="./assets/img/">
+      </div>
+      <div id="nav" class="nav">
+        <i class="fa-solid fa-arrow-left" id="prev_img" ></i>
+        <i class="fa-solid fa-arrow-right" id="next_img" ></i>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./style/style.css" rel="stylesheet">
+  <title>Login Form</title>
+</head>
+<body>
+  
+<div class="login-container " style="display: flex ; flex-direction: column;">
+  <h2>Login</h2>
+  
+  <form class="login-form" id="login-form">
+    <div class="form-group">
+      <label >Username:</label>
+      <input id="username" required>
+    </div>
+    <p class="error_msg_username"></p>
+    <div class="form-group">
+      <label >Password:</label>
+      <input class="password value" id="password" required>
+    </div>
+    <p class="error_msg_password"></p>
+    <div class="form-group">
+      <label >Number:</label>
+      <input class="Number value" id="number" pattern="^[0-9]{10,10}$"  required>
+    </div>
+    <p class="error_msg_number"></p>
+    <div class="form-group">
+      <label >email ID:</label>
+      <input id="email"  class="email value" pattern="^[a-zA-Z0-9.-_%$]+@[a-zA-Z]+\.[a-zA-Z]{3,5}$" required>
+    </div>
+    <p class="error_msg_email"></p>
+    <div class="form-group" id="btn">
+      <button >Submit</button>
+    </div>
+  </form>
+  <script src="./script/script.js"></script>
+</div>
+
+</body>
+</html>
